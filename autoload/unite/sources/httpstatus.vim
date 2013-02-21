@@ -100,8 +100,8 @@ function! s:source.gather_candidates(args, context)
 \       "507 - Insufficient Storage",
 \       "509 - Bandwidth Limit Exceeded",
 \       "510 - Not Extended",
-\       "511 - Network Authentication Required"
-    ]
+\       "511 - Network Authentication Required",
+\   ]
     return map(list, '{
         \ "word": v:val,
         \ "source": "httpstatus",
